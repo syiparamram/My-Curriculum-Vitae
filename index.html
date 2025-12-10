@@ -1,0 +1,158 @@
+<div class="cv-page">
+<style>
+/* ====== FIX HALAMAN BIAR NGGAK KETARIK SIDEBAR BLOG ====== */
+#main-wrapper, .main-wrapper, .post, .post-body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+/* ====== STYLE CV ====== */
+.cv-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: monospace;
+    color: #333;
+    font-size: 14pt;
+}
+
+/* BOX UTAMA */
+.cv-box {
+    border: 1px solid #333;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* JUDUL */
+.cv-title {
+    text-align: center;
+    background: #ffe066;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/* BLOK */
+.cv-section {
+    margin-bottom: 25px;
+}
+
+.cv-section h2 {
+    margin-bottom: 10px;
+}
+
+/* FOTO + DATA DIRI */
+.cv-foto-text {
+    display: flex;
+    gap: 20px;
+}
+
+.cv-foto {
+    width: 25%;
+}
+
+.cv-foto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cv-data {
+    width: 70%;
+}
+
+.cv-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cv-data th {
+    text-align: left;
+    padding: 5px;
+}
+
+.cv-data td {
+    padding: 5px;
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+    .cv-page {
+        padding: 10px;
+    }
+    .cv-foto-text {
+        flex-direction: column;
+    }
+    .cv-foto, .cv-data {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="cv-box">
+
+<div class="cv-title">
+    <h1>CURRICULUM VITAE</h1>
+</div>
+
+<!-- DATA DIRI -->
+<div class="cv-section">
+    <h2>DATA DIRI</h2>
+    <div class="cv-foto-text">
+
+        <div class="cv-foto">
+            <img src="https://alhadiid.or.id/wp-content/uploads/2024/03/Logo-SMK.png">
+        </div>
+
+        <div class="cv-data">
+            <table border="1">
+                <tr><th>Nama</th><th>:</th><td>Syifa Ramadani</td></tr>
+                <tr><th>Tempat</th><th>:</th><td>Bogor</td></tr>
+                <tr><th>Tgl. Lahir</th><th>:</th><td>11 September 2009</td></tr>
+                <tr><th>Agama</th><th>:</th><td>Islam</td></tr>
+                <tr><th>Alamat</th><th>:</th><td>Kp. Narogong, Desa Kembang Kuning, Klapanunggal</td></tr>
+                <tr><th>E-mail</th><th>:</th><td>syiparamram@gmail.com</td></tr>
+                <tr><th>No. HP</th><th>:</th><td>0882-1324-6834</td></tr>
+                <tr><th>Website</th><th>:</th><td><a href="https://alhadiid.or.id/">Al-Hadiid</a></td></tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<!-- PENDIDIKAN -->
+<div class="cv-section">
+    <h2>Pendidikan</h2>
+    <ul>
+        <li><b>2015–2021</b> — SD</li>
+        <li><b>2021–2024</b> — SMP</li>
+        <li><b>2024–2026</b> — SMK</li>
+    </ul>
+</div>
+
+<!-- PKL -->
+<div class="cv-section">
+    <h2>Praktek Kerja Lapangan</h2>
+    <ul>
+        <li><b>2017</b> — <i>Back-End</i> di PT. Teknologi</li>
+        <li><b>2020</b> — <i>Full Stack Developer</i> di PT. Teknologia</li>
+    </ul>
+</div>
+
+<!-- KEAHLIAN -->
+<div class="cv-section">
+    <h2>Keahlian</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>CodeIgniter</li>
+        <li>Laravel</li>
+        <li>Node.js</li>
+    </ul>
+</div>
+
+</div> <!-- END BOX -->
+</div> <!-- END PAGE -->
