@@ -7,46 +7,59 @@
     max-width: 100% !important;
 }
 
-/* ====== STYLE CV ====== */
-.cv-page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 25px;
+/* ====== BACKGROUND AESTHETIC ====== */
+body {
+    background: url("https://blogger.googleusercontent.com/img/a/AVvXsE…M8kwspoJPWySiJo2Nt4YONB7YGpmOqQm-wbVT2d-Xaw=s1200") no-repeat center center fixed;
+    background-size: cover;
     font-family: monospace;
     color: #333;
-    font-size: 14pt;
+}
+
+/* ====== HALAMAN UTAMA ====== */
+.cv-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
 }
 
 /* BOX UTAMA */
 .cv-box {
-    border: 1px solid #333;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
 }
 
 /* JUDUL */
 .cv-title {
     text-align: center;
-    background: #ffe066;
-    border-radius: 8px;
-    padding: 10px 0;
-    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ffb3d1, #b3d9ff);
+    border-radius: 12px;
+    padding: 12px 0;
+    margin-bottom: 25px;
+    color: #333;
 }
 
-/* BLOK */
+.cv-title h1 {
+    margin: 0;
+}
+
+/* SECTION */
 .cv-section {
     margin-bottom: 25px;
 }
 
 .cv-section h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffb3d1;
 }
 
-/* FOTO + DATA DIRI */
+/* FOTO + DATA */
 .cv-foto-text {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .cv-foto {
@@ -55,7 +68,8 @@
 
 .cv-foto img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid #ffd4e2;
 }
 
 .cv-data {
@@ -65,22 +79,32 @@
 .cv-data table {
     width: 100%;
     border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cv-data th, .cv-data td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
 }
 
 .cv-data th {
-    text-align: left;
-    padding: 5px;
+    width: 30%;
+    color: #444;
 }
 
-.cv-data td {
-    padding: 5px;
+.cv-data a {
+    color: #ff70a6;
 }
 
-/* RESPONSIVE MOBILE */
+/* LIST AESTHETIC */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
-    .cv-page {
-        padding: 10px;
-    }
     .cv-foto-text {
         flex-direction: column;
     }
@@ -106,15 +130,15 @@
         </div>
 
         <div class="cv-data">
-            <table border="1">
-                <tr><th>Nama</th><th>:</th><td>Syifa Ramadani</td></tr>
-                <tr><th>Tempat</th><th>:</th><td>Bogor</td></tr>
-                <tr><th>Tgl. Lahir</th><th>:</th><td>11 September 2009</td></tr>
-                <tr><th>Agama</th><th>:</th><td>Islam</td></tr>
-                <tr><th>Alamat</th><th>:</th><td>Kp. Narogong, Desa Kembang Kuning, Klapanunggal</td></tr>
-                <tr><th>E-mail</th><th>:</th><td>syiparamram@gmail.com</td></tr>
-                <tr><th>No. HP</th><th>:</th><td>0882-1324-6834</td></tr>
-                <tr><th>Website</th><th>:</th><td><a href="https://alhadiid.or.id/">Al-Hadiid</a></td></tr>
+            <table>
+                <tr><th>Nama</th><td>Syifa Ramadani</td></tr>
+                <tr><th>Tempat</th><td>Bogor</td></tr>
+                <tr><th>Tgl. Lahir</th><td>11 September 2009</td></tr>
+                <tr><th>Agama</th><td>Islam</td></tr>
+                <tr><th>Alamat</th><td>Kp. Narogong, Desa Kembang Kuning, Klapanunggal</td></tr>
+                <tr><th>E-mail</th><td>syiparamram@gmail.com</td></tr>
+                <tr><th>No. HP</th><td>0882-1324-6834</td></tr>
+                <tr><th>Website</th><td><a href="https://alhadiid.or.id/">Al-Hadiid</a></td></tr>
             </table>
         </div>
 
@@ -154,5 +178,5 @@
     </ul>
 </div>
 
-</div> <!-- END BOX -->
-</div> <!-- END PAGE -->
+</div>
+</div>
